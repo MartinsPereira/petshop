@@ -1,0 +1,233 @@
+.slick-dots{
+    margin-top: 24px;
+    position: static;
+
+    >li{
+        margin: 0;
+        width: auto;
+        height: auto;
+
+        button{
+            border: 1px solid var(--text-grey-scale-02);
+            background-color: var(--grey-scale-02);
+            border-radius: 6px;
+            width: 18px;
+            height: 12px;
+            padding: 0px;
+            margin-right: 8px;
+            transition: .3s ease-in-out;
+
+            &::before{
+                content: none;
+            }
+        }
+
+        &.slick-active{
+            button{
+                border: 1px solid var(--text-primary-01-default);
+                background-color: var(--text-primary-01-default);
+                width: 60px;
+            }
+        }
+    }
+}
+.slick-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px ;
+    border-radius: 0px;
+    height: 20px;
+    width: 20px;
+    z-index: 50;
+    bottom: 0;
+    transform: none;
+    top: auto;
+    background-color: none;
+    opacity: 1;
+
+    &::before{
+        content: "\e909";
+        font-family: var(--font-icomoon);
+        color: var(--text-primary-01-default);
+    }
+
+    &.slick-prev{
+        left: 12px;
+
+        &::before{
+            transform: rotate(180deg);
+        }
+    }
+
+    &.slick-next{
+        right: 12px;
+    }
+
+    &.slick-disabled{
+        &::before{
+            opacity: 1;
+        }
+        background-color: transparent;
+    }
+
+
+}
+
+.dots-black{
+    .slick-dots{
+        >li{
+            button{
+                border: 1px solid var(--text-grey-scale-06);
+            }
+    
+            &.slick-active{
+                button{
+                    &::before{
+                        background-color: var(--text-grey-scale-06);
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-arrow{
+    
+        &::before{
+            content: "\e908";
+            color: var(--text-grey-scale-06);
+            font-family: var(--font-icomoon);
+        }
+    }
+}
+
+.dots-green{
+    .slick-dots{
+        >li{
+            button{
+                border: 1px solid var(--pure-white);
+                background-color: var(--pure-white);
+                opacity: 0.4;
+            }
+    
+            &.slick-active{
+                button{
+                    opacity: 1;
+                    border: 1px solid var(--text-tertiary-01-default);
+                    background-color: var(--text-tertiary-01-default);
+                }
+            }
+        }
+    }
+}
+
+.carousel-usinas-solares{
+    .item-carousel-usinas-solares{
+        img{
+            width: 100%;
+        }
+    }
+
+    .slick-arrow{
+        bottom: -42px;
+
+        &::before{
+            content: "\e901";
+            font-family: var(--font-icomoon);
+        }
+
+        &.slick-next{
+            right: 50%;
+            margin-right: -62px;
+        }
+
+        &.slick-prev{
+            left: 50%;
+            margin-left: -62px;
+        }
+    }
+
+    .slider__counter{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        bottom: -29px;
+    }
+}
+
+.nav-central-result-destaque{
+    max-width: 120px;
+    padding: 0;
+    padding-left: 24px;
+    margin-bottom: 0;
+
+    .slick-arrow.slick-next{
+        right: -24px;
+    }
+    
+    .item-nav-central-result{
+        h3{
+            margin: 0;
+            text-align: center;
+            font-size: rem(28);
+            color: var(--text-primary-01-default);
+            padding-top: 0;
+        }
+    }
+
+    
+    .slick-arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 27px;
+        z-index: 50;
+        top: 50%;
+    
+        &::before{
+            content: "\e908";
+            color: var(--text-primary-01-default);
+            font-family: var(--font-icomoon);
+        }
+    
+        &.slick-prev{
+            left: 0;
+        }
+    
+    }
+}
+
+.slick-dotted.slick-slider{
+    margin-bottom: 0 ;
+}
+
+.slick-slider{
+    &.slick-dotted{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .slick-prev{
+            order: 2;
+            margin-top: 40px;
+            position: static;
+        }
+
+        .slick-dots{
+            order: 3;
+            width: auto;
+            margin-top: 0px;
+            display: flex;
+            align-items: center;
+            margin: 0px 12px;
+            margin-top: 40px;
+        }
+
+        .slick-next {
+            position: static;
+            margin-top: 40px;
+            order: 4;
+        }
+    }
+}

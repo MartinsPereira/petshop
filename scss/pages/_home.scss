@@ -1,0 +1,217 @@
+.results-home{
+    padding: 24px 24px 24px 18px;
+    border-left: 6px solid var(--text-tertiary-01-default);
+    background-color: var(--primary-01-default);
+    border-radius: 2px;
+
+    @media (max-width: 991px){
+        margin-bottom: 32px;
+    }
+
+    >h3{
+        padding-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    >h4{
+        padding-top: 0;
+        color: var(--secondary-01-default);
+        font-weight: 500;
+    }
+
+    .list-downloads-results{
+        display: flex;
+        flex-direction: column;
+
+        >a{
+            display: block;
+            padding: 8px 0;
+            font-size: rem(14);
+            text-decoration: none;
+            color: var(--text-white);
+            border-bottom: 1px solid var(--text-primary-01-var-1);
+        }
+    }
+}
+
+.list-atalho-pages-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+
+    @media (max-width: 991px){
+        grid-template-columns: 1fr ;
+    }
+
+    .slick-track{
+        display: flex;
+    }
+
+    .slick-slide{
+        height: inherit;
+        @media (max-width: 991px){
+            .item-atalho-pages-home{
+                height: 100%;
+            }
+        }
+
+        >div{
+            height: 100%;
+        }
+    }
+
+
+    .item-atalho-pages-home{
+        @media (max-width: 991px){
+            padding: 0px 12px;
+        }
+
+        a{
+            padding: 46px 16px 46px 12px;
+
+            @media (max-width: 991px){
+                padding: 32px 16px;
+            }
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: var(--grey-scale-01);
+            border-radius: 2px;
+            height: 100%;
+            border-left: 4px solid var(--grey-scale-01);
+            text-decoration: none;
+            transition: .3s ease-in-out;
+
+
+            &:hover{
+                background-color: var(--tertiary-01-default);
+                border-left: 4px solid var(--text-black);
+            }
+
+            img{
+                align-self: flex-start;
+            }
+
+            h3{
+                margin-bottom: 0;
+                padding-top: 8px;
+                color: var(--text-primary-01-default);
+            }
+        }
+    }
+}
+
+.section-busca-democratizacao{
+    overflow: hidden;
+
+    >.container{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.bg-black-democratizacao{
+    background: url('../images/bg-color-black.svg') no-repeat center;
+    background-size: cover;
+    padding: 160px 0 111px;
+    position: relative;
+
+    @media (max-width: 991px){
+        padding-right: 40px;
+    }
+
+    @media (max-width: 475px){
+        padding-right: 16px;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        left: -2000px;
+        top: 0;
+        width: 2000px;
+        height: 100%;
+        background-color: var(--primary-01-default);
+    }
+
+    &::after{
+        content: "";
+        height: 500px;
+        width: 416px;
+        background-color: var(--tertiary-01-default);
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        right: -100px;
+        bottom: -90px;
+
+        @media (max-width: 991px){
+            width: 100%;
+            height: 650px;
+        }
+
+        @media (max-width: 575px){
+            width: 110%;
+            height: 800px;
+        }
+    }
+
+    .flex-busca-democratizacao{
+        display: flex;
+    }
+
+    .text-busca-democratizacao{
+        h2{
+            margin-bottom: 16px;
+        }
+
+        p{
+            max-width: 384px;
+
+            @media (min-width: 992px){
+                padding-left: 32px;
+            }
+        }
+
+        small{
+            @media (min-width: 992px){
+                margin-left: 32px;
+            }
+        }
+    }
+
+}
+
+.list-data-democratizacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 16px;
+    row-gap: 40px;
+
+    @media (max-width: 991px){
+        margin-top: 32px;
+    }
+
+    @media (max-width: 575px){
+        grid-template-columns: 1fr;
+    }
+
+    .item-data-democratizacao{
+
+        h3{
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+
+        span{
+            color: var(--text-secondary-01-var-3);
+            font-size: rem(14);
+
+            @media (max-width: 475px){
+                font-size: rem(16);
+            }
+        }
+    }
+}
