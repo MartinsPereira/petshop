@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Cinto topzera!",
+      "price": 36.99,
+      "descount": 8.99,
+      "size": "3m",
+      "color": "Misto",
+      "img": "./images/product/product-2.png",
+      "rating": "./images/product/rate.png"
+    },
+    {
+      "id": "2",
+      "name": "vivamus quam ex, ultricies et blandit sed",
+      "price": 23.99,
+      "descount": 0,
+      "size": "1m",
+      "color": "Misto",
+      "img": "./images/product/product-1.png",
+      "rating": "./images/product/rate.png"
+    },{
+      "id": "3",
+      "name": "Lorem ipsum dolor sit amet.",
+      "price": 17.99,
+      "descount": 0,
+      "size": "1m",
+      "color": "Misto",
+      "img": "./images/product/product-1.png",
+      "rating": "./images/product/rate.png"
+    }, {
+      "id": "4",
+      "name": "Cinto topzera!!!!",
+      "price": 46.99,
+      "descount": 8.39,
+      "size": "3m",
+      "color": "Misto",
+      "img": "./images/product/product-2.png",
+      "rating": "./images/product/rate.png"
+    }
+  ]
+}
